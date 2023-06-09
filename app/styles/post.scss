@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.post {
+  @apply w-full p-3 box-border flex-grow bg-white rounded-md mb-2 sm:mb-3
+}
+
+.post .comments-black-screen {
+  @apply bg-black fixed left-0 top-0 opacity-50 w-full h-full z-40 sm:cursor-pointer
+}
+
+.post > .post-head {
+  @apply flex items-center gap-10 pb-3 justify-between
+}
+
+.post > .post-head > .user-link .user {
+  @apply flex gap-3 justify-center items-center
+}
+
+.post > .post-head > .user-link .user > .avatar {
+  @apply w-10 h-10 rounded-full
+}
+
+.post > .post-head > .user-link .user > .user-info > .name {
+  @apply text-xs
+}
+
+.post > .post-head > .user-link .user > .user-info > .email {
+  @apply text-xs text-zinc-400
+}
+
+.post > .post-head .post-options {
+  @apply relative
+}
+
+.post > .post-head .post-options > .drop-down{
+  @apply absolute top-7 right-0 bg-white border-2 rounded-md w-24 font-bold
+}
+
+.post > .post-head .post-options > .options-icon {
+  @apply text-zinc-400
+}
+.post .post-text{
+  @apply py-3
+}
+.post >.image-link> .image {
+  max-height: 600px;
+  @apply w-full my-2 object-cover object-center
+}
+
+.post > .post-footer {
+  @apply w-full text-zinc-600
+}
+
+.post > .post-footer > .post-info-count {
+  @apply flex p-2 justify-between
+}
+
+.post > .post-footer >.line {
+  @apply border-zinc-300 border-2 h-0 mx-auto mb-3
+}
+
+.post >.post-footer > .post-actions {
+  @apply flex py-2 gap-2
+}
+
+.post > .post-footer > .post-actions > .like {
+  @apply w-1/2 flex items-center justify-center gap-1 border rounded-full p-2 cursor-pointer
+}
+
+.post > .post-footer > .post-actions > .comments {
+  @apply w-1/2 flex items-center justify-center gap-1 border rounded-full p-2 cursor-pointer
+}
+.post > .post-footer > .post-actions > .save{
+  @apply flex items-center gap-1 cursor-pointer
+}

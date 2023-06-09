@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.posts{
+    max-width: 500px;
+    @apply mx-auto mt-2  sm:mt-3
+}
+
+@media (max-width:500px) {
+    .posts{
+        @apply w-full
+    }
+}

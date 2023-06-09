@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  // @apply bg-slate-300
+}
+
+.providers{
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center flex-col gap-2
+}
+.providers > .box {
+  @apply w-36 border-2 border-slate-700 flex justify-center m-auto px-12 py-2 rounded-md  cursor-pointer
+}
+
+
+.providers >.box > button.provider {
+  @apply w-full
+}
+
+.providers >.box > button.provider > .provider-img {
+  @apply w-full 
+}

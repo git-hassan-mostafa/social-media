@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.comments-block {
+    width: 600px;
+    @apply fixed h-96 bg-white p-2 sm:p-5 shadow-xl left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 scale-100 z-50 flex flex-col gap-5 rounded-2xl 
+}
+
+.comments-block > .close{
+    @apply absolute top-1.5 right-1.5 px-3 py-1.5 pt-0 bg-blue-600 text-white z-30 text-xl rounded-full sm:cursor-pointer
+}
+
+.comments-block .title {
+    @apply text-center font-bold text-base sm:text-2xl
+}
+
+@media (max-width:600px) {
+    .comments-block {
+        @apply w-full h-4/6
+    }
+}
+
+.comments-block > .comments {
+    @apply  flex-1 overflow-auto flex flex-col gap-2
+}
+
+.comments-block > .comments .one-comment{
+    @apply flex gap-2 
+}
+
+.comments-block > .comments .one-comment .user-photo {
+    min-width: 32px;
+    @apply w-8 h-8 object-cover rounded-full object-center flex-1
+}
+
+.comments-block > .comments .one-comment .comment-block{
+    @apply bg-zinc-300 rounded-lg p-2 pt-1
+}
+
+.comments-block > .comments .one-comment .comment-block .user-name {
+    @apply font-bold
+}

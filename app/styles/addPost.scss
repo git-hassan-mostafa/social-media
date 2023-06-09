@@ -1,0 +1,44 @@
+
+.add-post {
+    max-width: 600px;
+    @apply mx-auto h-auto bg-slate-50 p-6 box-border mt-5 rounded-lg
+}
+
+@media (max-width:600px) {
+    .add-post {
+        @apply w-full
+    }
+}
+
+.add-post>h2 {
+    @apply text-center font-bold text-3xl sm:text-5xl text-slate-700 mt-0
+}
+
+.add-post>form>.content {
+ @apply flex gap-4
+}
+
+.add-post>form>.content>textarea.input {
+    @apply block flex-1 h-60 text-2xl whitespace-pre-line  resize-none p-2 outline-none rounded-lg
+}
+
+.add-post>form>.content>.post-image {
+    @apply w-24 h-fit relative
+}
+
+.add-post>form>.content>.post-image>.remove-image{
+    @apply absolute -top-2.5 -right-2.5 p-1 bg-red-600 text-white rounded-full sm:cursor-pointer
+}
+
+.add-post>form>.buttons {
+    @apply flex justify-between sm:justify-between items-center mt-6
+    
+}
+
+.add-post>form>.buttons>.upload-photo {
+    @apply bg-green-700 p-2 text-white rounded-lg first-letter:uppercase font-semibold max-w-fit
+}
+
+.add-post>form>.buttons>.post {
+    @apply bg-blue-600 py-2 px-4 text-white rounded-lg first-letter:uppercase font-semibold max-w-fit
+}

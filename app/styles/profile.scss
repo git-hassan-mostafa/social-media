@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profile-header {
+    max-width: 500px;
+    @apply flex mx-auto justify-between h-fit items-center p-5 sm:px-0 gap-5 sm:border-b-2 border-zinc-400
+}
+
+.profile-header .profile-avatar {
+    @apply w-48 h-48  rounded-full
+}
+
+.profile-header .profile-inforamtions {
+    @apply text-xl
+}
+
+.profile-header .profile-inforamtions > div {
+    @apply mt-3
+}
+.profile-header .profile-inforamtions .name {
+    @apply text-3xl font-bold text-slate-800
+}
+
+.profile-header .profile-inforamtions .email {
+    @apply text-zinc-600
+}
+
+.profile-header .profile-inforamtions ._id {
+    @apply text-zinc-600 text-xl
+}
+
+@media (max-width:500px) {
+    .profile-header {
+        @apply w-full justify-start flex-col
+    }
+}
+
+
+
+// .profile-header .icons {
+//     @apply self-start
+// }
